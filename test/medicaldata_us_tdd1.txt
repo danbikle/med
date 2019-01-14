@@ -102,8 +102,8 @@ I should add a script to start local server on port 3110
 
 I should enhance README.md steps:
   - create med account
-  - install software
   - generate keys
+  - install software
   - fork github repo: danbikle/med
   - clone fork to ~med on laptop
   - bundle
