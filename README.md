@@ -51,4 +51,32 @@ libpq-dev wget curl gitk ruby ruby-dev autoconf bison
 
 If Ubuntu complains about apt update, just give it 30 minutes to "catch-up".
 
+After you install the software listed above, you should install more software:
+
+```
+cd ~med
+git clone https://github.com/rbenv/rbenv      .rbenv
+git clone https://github.com/rbenv/ruby-build .rbenv/plugins/ruby-build
+curl -L rails4.us/.gemrc > ~/.gemrc
+```
+
+If that goes well you add syntax to ~med/.bashrc file:
+
+```
+if [ -e ${HOME}/.rbenv ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
+```
+
+Then, you should install more software:
+
+```
+bash
+rbenv install 2.6.0
+rbenv global  2.6.0
+gem install rails -v 5.2.2
+```
+
+
 
