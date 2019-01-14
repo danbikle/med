@@ -49,3 +49,43 @@ I should commit ~med/med/ to local git repo:
 
 cd ~med/med/
 git add .; git commit -am hello
+
+I should create an account on github:
+
+danbikle/med
+
+git remote add gh git@github.com:danbikle/med.git
+
+git push gh master
+
+I should enhanced README.md:
+
+echo '# Under Construction' > ~med/med/README.md
+
+I should create an account on heroku.com
+
+I should install heroku software:
+
+cd ~med/
+wget https://cli-assets.heroku.com/heroku-cli/channels/stable/heroku-cli-linux-x64.tar.gz
+tar xf heroku-cli-linux-x64.tar.gz
+mv heroku*linux-x64 heroku
+echo 'export PATH=${HOME}/heroku/bin:$PATH' >> ~med/.bashrc
+bash
+
+
+I should login via bash-command:
+
+heroku auth:login
+heroku status
+
+I should create a heroku app:
+
+heroku create med1
+
+I should deploy using git push:
+
+git add .
+git commit -am more
+git push gh     master
+git push heroku master
