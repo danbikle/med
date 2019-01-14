@@ -1,0 +1,51 @@
+~med/med/test/medicaldata_us_tdd1.txt
+
+I should load rails4.us in my browser to have syntax examples ready
+
+I should create a linux account: med
+
+I should login to med account.
+
+I should install ruby 2.6.0
+
+I should install rails 5.2.2
+
+I should rails-new med
+
+ref:
+
+rails4.us/lessons/lesson015
+
+cd ~med
+rails new med --skip-yarn --skip-action-mailer    \
+	      --skip-action-cable --skip-coffee   \
+	      --skip-javascript --skip-turbolinks \
+              --skip-active-record --skip-active-storage \
+	      --skip-bootsnap
+	      
+I should copy medicaldata_us_tdd1.txt to ~/med/med/test/medicaldata_us_tdd1.txt
+
+I should create ~med/med/Procfile:
+
+echo web: bundle exec puma -C config/puma.rb > ~med/med/Procfile
+
+I should enhance Gemfile:
+
+echo "gem 'haml'"       >> Gemfile
+echo "gem 'haml-rails'" >> Gemfile
+bundle
+
+I should create a home page and others:
+
+rails g controller pages about blog contact index mydata
+emacs ~med/med/config/routes.rb
+
+I should use "bundle package" to copy all the needed gems into the vendor folder:
+
+cd ~med/med/
+bundle package
+
+I should commit ~med/med/ to local git repo:
+
+cd ~med/med/
+git add .; git commit -am hello
