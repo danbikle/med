@@ -105,4 +105,83 @@ The above syntax is example.
 
 Your account will have a different name than "uraccount".
 
+Next, you should ensure that the med-repo has all the gems it needs:
+
+```
+cd ~med/med
+bundle
+```
+
+Then, you should start the local webserver:
+
+```
+cd ~med/med
+script/railss.bash
+```
+
+Next, visit this URL to create a heroku account:
+
+https://signup.heroku.com/
+
+Then, install Heroku software:
+
+```
+cd ~med/
+wget https://cli-assets.heroku.com/heroku-cli/channels/stable/heroku-cli-linux-x64.tar.gz
+tar xf heroku-cli-linux-x64.tar.gz
+mv heroku*linux-x64 heroku
+echo 'export PATH=${HOME}/heroku/bin:$PATH' >> ~med/.bashrc
+bash
+```
+
+Next, login via bash-command:
+
+```
+heroku auth:login
+heroku status
+```
+
+Then, create an app on heroku:
+
+```
+heroku create mymed1
+```
+
+If someone else has already claimed the name: "mymed1", try a different name like: "urmed72".
+
+Next, push your copy of the repo to herok:
+
+```
+git push heroku master
+```
+
+To see a short development iteration, commit a small change to the repo:
+
+```
+cd ~med/med
+echo Dan was here > ~med/med/public/dan.html
+git add .
+git commit -am more-isbetter
+git push origin master
+git push heroku master
+```
+
+Then, visit your repo on github.
+
+From there, use the web-UI to submit a pull request to danbikle/med
+
+Wait for Dan to merge the pull request
+
+Next, git-pull danbikle/med into both copies of your fork repo.
+
+Remember, that you have two copies of the fork repo:
+
+* One copy on github
+* One copy on your laptop in the ~med/med/ folder
+
+Then, git-push the fork into Heroku:
+
+```
+git push heroku master
+```
 
