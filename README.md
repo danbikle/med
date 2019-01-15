@@ -84,7 +84,7 @@ Or, login to your github account.
 
 Then, in the settings, use your mouse to paste ~med/.ssh/id_rsa.pub into the ssh-textarea.
 
-![Image of: ssh settings](public/sshsetting.png)
+![Image of: public/sshsetting.png](public/sshsetting.png)
 
 
 
