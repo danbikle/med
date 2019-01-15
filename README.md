@@ -86,5 +86,11 @@ Then, in the settings, use your mouse to paste ~med/.ssh/id_rsa.pub into the ssh
 
 ![Image of: public/sshsetting.png](public/sshsetting.png)
 
+Then, you should vist this URL with your browser:
+
+https://github.com/danbikle/med
+
+In the upper right, click the fork link which will fork the med-repo for you.
+
 
 
