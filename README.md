@@ -78,5 +78,13 @@ rbenv global  2.6.0
 gem install rails -v 5.2.2
 ```
 
+Next, you should create an account on github.com.
+
+Or, login to your github account.
+
+Then, in the settings, use your mouse to paste ~med/.ssh/id_rsa.pub into the ssh-textarea.
+
+![Image of: ssh settings](public/sshsetting.png)
+
 
 
