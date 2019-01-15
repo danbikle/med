@@ -92,5 +92,17 @@ https://github.com/danbikle/med
 
 In the upper right, click the fork link which will fork the med-repo for you.
 
+Github should respond by showing you the repo of the fork.
+
+Then, you should clone the fork with syntax like this:
+
+```
+cd ~med
+git clone git@github.com:uraccount/med
+```
+
+The above syntax is example.
+
+Your account will have a different name than "uraccount".
 
 
